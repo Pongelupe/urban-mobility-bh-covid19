@@ -1,0 +1,2 @@
+psycopg2-binary==2.8.4
+csv23==0.3.3

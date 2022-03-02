@@ -1,0 +1,14 @@
+version: '3'
+services:
+  postgres:
+    image: "kartoza/postgis"
+    restart: always
+    container_name: "postgis_mobility"
+    ports:
+      - "15432:5432"
+    environment:
+      - POSTGRES_DB=bh
+      - POSTGRES_USER=bh
+      - POSTGRES_PASSWORD=bh
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
